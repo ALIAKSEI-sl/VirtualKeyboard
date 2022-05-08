@@ -88,6 +88,10 @@
     background: black;
 }
 
+.keyboard_button4_12 {    
+    background: black;
+}
+
 .keyboard_button4_13 {
     width: 86px;
     background: black;
@@ -99,4 +103,8 @@
 
 .keyboard_button5_4 {
     width: 330px;
+}
+
+.hidden {
+    display: none;
 }

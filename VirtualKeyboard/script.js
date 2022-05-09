@@ -4016,6 +4016,16 @@ function change3_13 (event) {
     textarea.value += "\n"
 }
 
+keyboard_button4_1.addEventListener('click', change4_1);
+function change4_1 (event) {
+    keyboard_button4_1.style.background = "#e95b5b";
+    keyboard_button4_1.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button4_1.style.background = "black";
+        keyboard_button4_1.style.borderRadius = "3px";
+      }, 500)
+}
+
 keyboard_button4_2.addEventListener('click', change4_2);
 function change4_2 (event) {
     keyboard_button4_2.style.background = "#e95b5b";
@@ -4399,53 +4409,53 @@ function change5_9 (event) {
 
 let flag = false
 document.body.addEventListener("keyup", changelange)
-function changelange (event) {
-    
+function changelange (event) {    
     let casedown = document.querySelectorAll(".casedown");
     let caps = document.querySelectorAll(".caps");
-if (event.code == "AltLeft") {flag = true}
-if (event.code == "ShiftLeft" && flag) {
+    
+    if (event.code == "AltLeft") {flag = true}
+    if (event.code == "ShiftLeft" && flag) {
     for (i=0; i<casedown.length; i++) {
-        if (casedown[i].parentElement.classList.contains('ru') && caps[0].classList.contains("hidden")){
+        if (!keyboard_button3_1.classList.contains('back-clik')) {
+            if (casedown[i].parentElement.classList.contains('ru') && caps[0].classList.contains("hidden")){
             if (!casedown[i].classList.contains('hidden')){
                 casedown[i].classList.add("hidden")              
             }
             else {
                 casedown[i].classList.remove("hidden")
             }
-        }
-
-        //if (caps[i].parentElement.classList.contains('ru') && !caps[0].classList.contains("hidden")){
-           // if (!caps[1].classList.contains("hidden")) {
-           // console.log(5)
-           // caps[i].classList.add("hidden")}
-        
-       // else {
-        //        caps[i].classList.remove("hidden")
-      //  }
-    //}
-
-        if (casedown[i].parentElement.classList.contains('en') && caps[1].classList.contains("hidden")) {
+            }     
+            if (casedown[i].parentElement.classList.contains('en') && caps[1].classList.contains("hidden")) {
             if (casedown[i].classList.contains('hidden')){
                 casedown[i].classList.remove("hidden")
             }
             else {
                 casedown[i].classList.add("hidden")
             }
+            }
         }
 
-        //if (casedown[i].parentElement.classList.contains('en') && !caps[1].classList.contains("hidden")) {
-           // if (caps[i].classList.contains('hidden')){
-           //     caps[i].classList.remove("hidden")
-           // }
-           // else {
-           //     caps[i].classList.add("hidden")
-          //  }
-        //}
+        if (keyboard_button3_1.classList.contains('back-clik')) {
+            if (caps[i].parentElement.classList.contains('ru') && casedown[0].classList.contains("hidden")){
+            if (!caps[i].classList.contains('hidden')){
+                caps[i].classList.add("hidden")              
+            }
+            else {
+                caps[i].classList.remove("hidden")
+            }
+            }     
+            if (caps[i].parentElement.classList.contains('en') && casedown[1].classList.contains("hidden")) {
+            if (caps[i].classList.contains('hidden')){
+                caps[i].classList.remove("hidden")
+            }
+            else {
+                caps[i].classList.add("hidden")
+            }
+            }
+        }       
     }   
-    flag = false
-    
-}
+        flag = false    
+    }
 }
 
 
@@ -4485,7 +4495,43 @@ function change3_1 (event) {
     }
 }
 
-textarea.addEventListener("keydown", click)
+keyboard_button4_1.addEventListener('mousedown', change4_1);
+function change4_1 (event) {
+    let casedown = document.querySelectorAll(".casedown");
+    let caseUp = document.querySelectorAll(".caseUp");
+    for (i=0; i<casedown.length; i++) {
+        if (!keyboard_button3_1.classList.contains('back-clik')) {
+            if (casedown[i].parentElement.classList.contains('ru')){ 
+                if (!casedown[i].classList.contains('hidden') && casedown[1].classList.contains('hidden')){
+                    casedown[i].classList.add("hidden")
+                    caseUp[i].classList.remove("hidden")         
+                }
+                else{
+                    casedown[i].classList.remove("hidden")
+                    caseUp[i].classList.add("hidden") 
+            }
+            
+            }
+            if (casedown[i].parentElement.classList.contains('en')){ 
+                
+                if (casedown[0].classList.contains('hidden') && caseUp[0].classList.contains('hidden')){
+                    console.log(5)
+                  //  casedown[i].classList.add("hidden")
+                 //   caseUp[i].classList.remove("hidden")         
+               }
+               // else{
+              //     casedown[i].classList.remove("hidden")
+              //    caseUp[i].classList.add("hidden") 
+           // }
+            
+            }
+        }
+    }
+
+}
+
+
+document.body.addEventListener("keydown", click) 
 function click (event) {
     if (event.code === "Backquote") {
         keyboard_button1_1.style.background = "#e95b5b";
@@ -4817,6 +4863,15 @@ function click (event) {
             keyboard_button3_13.style.borderRadius = "3px";
           }, 500)                   
     }
+    if (event.code === "ShiftLeft") {
+        keyboard_button4_1.style.background = "#e95b5b";
+        keyboard_button4_1.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button4_1.style.background = "black";
+            keyboard_button4_1.style.borderRadius = "3px";
+          }, 500)
+          //change4_1()                   
+    }
     if (event.code === "KeyZ") {
         keyboard_button4_2.style.background = "#e95b5b";
         keyboard_button4_2.style.borderRadius = "50px";
@@ -4985,6 +5040,6 @@ function click (event) {
             keyboard_button5_9.style.borderRadius = "3px";
           }, 500)                   
     }    
-    console.log(event.code)
+    //console.log(event.code)
 }
 

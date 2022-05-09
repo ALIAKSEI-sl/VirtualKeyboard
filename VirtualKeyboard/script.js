@@ -532,7 +532,7 @@ shiftcaps.classList.add('hidden');
                     
 en = document.createElement('span');
 en.className = "en";
-keyboard_button1_4.append(en);
+keyboard_button1_10.append(en);
 casedown = document.createElement('span');
 casedown.className = "casedown";
 casedown.textContent = "9";
@@ -724,7 +724,7 @@ shiftcaps.classList.add('hidden');
                     
 en = document.createElement('span');
 en.className = "en";
-keyboard_button1_4.append(en);
+keyboard_button1_14.append(en);
 casedown = document.createElement('span');
 casedown.className = "casedown";
 casedown.textContent = "backspace";
@@ -1424,21 +1424,21 @@ ru.className = "ru";
 keyboard_button2_15.append(ru);
 casedown = document.createElement('span');
 casedown.className = "casedown";
-casedown.textContent = "del";
+casedown.textContent = "*";
 ru.append(casedown);        
 caseUp = document.createElement('span');
 caseUp.className = "caseUp";
-caseUp.textContent = "del";
+caseUp.textContent = "*";
 ru.append(caseUp);
 caseUp.classList.add('hidden');
 caps = document.createElement('span');
 caps.className = "caps";
-caps.textContent = "del";
+caps.textContent = "*";
 ru.append(caps);
 caps.classList.add('hidden');
 shiftcaps = document.createElement('span');
 shiftcaps.className = "shiftcaps";
-shiftcaps.textContent = "del";
+shiftcaps.textContent = "*";
 ru.append(shiftcaps);
 shiftcaps.classList.add('hidden');
                     
@@ -1447,22 +1447,22 @@ en.className = "en";
 keyboard_button2_15.append(en);
 casedown = document.createElement('span');
 casedown.className = "casedown";
-casedown.textContent = "del";
+casedown.textContent = "*";
 en.append(casedown);
 casedown.classList.add('hidden')
 caseUp = document.createElement('span');
 caseUp.className = "caseUp";
-caseUp.textContent = "del";
+caseUp.textContent = "*";
 en.append(caseUp);
 caseUp.classList.add('hidden');
 caps = document.createElement('span');
 caps.className = "caps";
-caps.textContent = "del";
+caps.textContent = "*";
 en.append(caps);
 caps.classList.add('hidden');
 shiftcaps = document.createElement('span');
 shiftcaps.className = "shiftcaps";
-shiftcaps.textContent = "del";
+shiftcaps.textContent = "*";
 en.append(shiftcaps);
 shiftcaps.classList.add('hidden');
 
@@ -2032,7 +2032,7 @@ caseUp.textContent = "\"";
 en.append(caseUp);
 caseUp.classList.add('hidden');
 caps = document.createElement('span');
-caps.className = "'caps'";
+caps.className = "caps";
 caps.textContent = "'";
 en.append(caps);
 caps.classList.add('hidden');
@@ -2153,7 +2153,7 @@ ru.append(caseUp);
 caseUp.classList.add('hidden');
 caps = document.createElement('span');
 caps.className = "caps";
-caps.textContent = "я";
+caps.textContent = "Я";
 ru.append(caps);
 caps.classList.add('hidden');
 shiftcaps = document.createElement('span');
@@ -2788,7 +2788,7 @@ shiftcaps.classList.add('hidden');
                     
 en = document.createElement('span');
 en.className = "en";
-keyboard_button2_1.append(en);
+keyboard_button5_2.append(en);
 casedown = document.createElement('span');
 casedown.className = "casedown";
 casedown.textContent = "win";
@@ -2836,7 +2836,7 @@ shiftcaps.classList.add('hidden');
                     
 en = document.createElement('span');
 en.className = "en";
-keyboard_button2_3.append(en);
+keyboard_button5_3.append(en);
 casedown = document.createElement('span');
 casedown.className = "casedown";
 casedown.textContent = "alt";
@@ -2884,7 +2884,7 @@ shiftcaps.classList.add('hidden');
                     
 en = document.createElement('span');
 en.className = "en";
-keyboard_button2_4.append(en);
+keyboard_button5_4.append(en);
 casedown = document.createElement('span');
 casedown.className = "casedown";
 casedown.textContent = " ";
@@ -2932,7 +2932,7 @@ shiftcaps.classList.add('hidden');
                     
 en = document.createElement('span');
 en.className = "en";
-keyboard_button2_5.append(en);
+keyboard_button5_5.append(en);
 casedown = document.createElement('span');
 casedown.className = "casedown";
 casedown.textContent = "alt";
@@ -2980,7 +2980,7 @@ shiftcaps.classList.add('hidden');
                     
 en = document.createElement('span');
 en.className = "en";
-keyboard_button2_6.append(en);
+keyboard_button5_6.append(en);
 casedown = document.createElement('span');
 casedown.className = "casedown";
 casedown.textContent = "◄";
@@ -3028,7 +3028,7 @@ shiftcaps.classList.add('hidden');
                     
 en = document.createElement('span');
 en.className = "en";
-keyboard_button2_7.append(en);
+keyboard_button5_7.append(en);
 casedown = document.createElement('span');
 casedown.className = "casedown";
 casedown.textContent = "▼";
@@ -3076,7 +3076,7 @@ shiftcaps.classList.add('hidden');
                     
 en = document.createElement('span');
 en.className = "en";
-keyboard_button2_8.append(en);
+keyboard_button5_8.append(en);
 casedown = document.createElement('span');
 casedown.className = "casedown";
 casedown.textContent = "►";
@@ -3147,19 +3147,1844 @@ en.append(shiftcaps);
 shiftcaps.classList.add('hidden');
 
 
-keyboard_button1_1.addEventListener('click', change);
-function change (event) {
+keyboard_button1_1.addEventListener('click', change1_1);
+function change1_1 (event) {
+    keyboard_button1_1.style.background = "#e95b5b";
+        keyboard_button1_1.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button1_1.style.background = "black";
+            keyboard_button1_1.style.borderRadius = "3px";
+          }, 500)   
     let content = ""
     for (i=0; i<4; i++) {
-        if (!keyboard_button1_1.firstChild.childNodes[i].classList.contains('hidden')) {
-            content += keyboard_button1_1.firstChild.childNodes[i].textContent
-            console.log(content)}
+        if (!keyboard_button1_1.firstChild.childNodes[i].classList.contains('hidden')) {            
+            content += keyboard_button1_1.firstChild.childNodes[i].textContent                                
+    }
     }
     for (i=0; i<4; i++) {
-        if (!keyboard_button1_1.lastChild.childNodes[i].classList.contains('hidden')) {
-            content += keyboard_button1_1.firstChild.childNodes[i].textContent
-            console.log(content)}
+        if (!keyboard_button1_1.lastChild.childNodes[i].classList.contains('hidden')) {            
+            content += keyboard_button1_1.lastChild.childNodes[i].textContent                    
+    }
+    }
+    textarea.value += content    
+}
+
+keyboard_button1_2.addEventListener('click', change1_2);
+function change1_2 (event) {
+    keyboard_button1_2.style.background = "#e95b5b";
+        keyboard_button1_2.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button1_2.style.background = "#444444";
+            keyboard_button1_2.style.borderRadius = "3px";
+          }, 500)   
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button1_2.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button1_2.firstChild.childNodes[i].textContent           
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button1_2.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button1_2.lastChild.childNodes[i].textContent
+        }
     }
     textarea.value += content
+}
+
+keyboard_button1_3.addEventListener('click', change1_3);
+function change1_3 (event) {
+    keyboard_button1_3.style.background = "#e95b5b";
+    keyboard_button1_3.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button1_3.style.background = "#444444";
+        keyboard_button1_3.style.borderRadius = "3px";
+      }, 500)   
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button1_3.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button1_3.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button1_3.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button1_3.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button1_4.addEventListener('click', change1_4);
+function change1_4 (event) {
+    keyboard_button1_4.style.background = "#e95b5b";
+    keyboard_button1_4.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button1_4.style.background = "#444444";
+        keyboard_button1_4.style.borderRadius = "3px";
+      }, 500)   
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button1_4.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button1_4.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button1_4.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button1_4.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button1_5.addEventListener('click', change1_5);
+function change1_5 (event) {
+    keyboard_button1_5.style.background = "#e95b5b";
+    keyboard_button1_5.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button1_5.style.background = "#444444";
+        keyboard_button1_5.style.borderRadius = "3px";
+      }, 500)   
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button1_5.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button1_5.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button1_5.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button1_5.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button1_6.addEventListener('click', change1_6);
+function change1_6 (event) {
+    keyboard_button1_6.style.background = "#e95b5b";
+    keyboard_button1_6.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button1_6.style.background = "#444444";
+        keyboard_button1_6.style.borderRadius = "3px";
+      }, 500)   
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button1_6.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button1_6.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button1_6.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button1_6.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button1_7.addEventListener('click', change1_7);
+function change1_7 (event) {
+    keyboard_button1_7.style.background = "#e95b5b";
+    keyboard_button1_7.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button1_7.style.background = "#444444";
+        keyboard_button1_7.style.borderRadius = "3px";
+      }, 500)   
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button1_7.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button1_7.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button1_7.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button1_7.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button1_8.addEventListener('click', change1_8);
+function change1_8 (event) {
+    keyboard_button1_8.style.background = "#e95b5b";
+    keyboard_button1_8.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button1_8.style.background = "#444444";
+        keyboard_button1_8.style.borderRadius = "3px";
+      }, 500)   
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button1_8.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button1_8.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button1_8.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button1_8.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button1_9.addEventListener('click', change1_9);
+function change1_9 (event) {
+    keyboard_button1_9.style.background = "#e95b5b";
+    keyboard_button1_9.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button1_9.style.background = "#444444";
+        keyboard_button1_9.style.borderRadius = "3px";
+      }, 500)   
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button1_9.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button1_9.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button1_9.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button1_9.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button1_10.addEventListener('click', change1_10);
+function change1_10 (event) {
+    keyboard_button1_10.style.background = "#e95b5b";
+    keyboard_button1_10.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button1_10.style.background = "#444444";
+        keyboard_button1_10.style.borderRadius = "3px";
+      }, 500)   
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button1_10.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button1_10.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button1_10.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button1_10.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button1_11.addEventListener('click', change1_11);
+function change1_11 (event) {
+    keyboard_button1_11.style.background = "#e95b5b";
+    keyboard_button1_11.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button1_11.style.background = "#444444";
+        keyboard_button1_11.style.borderRadius = "3px";
+      }, 500)   
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button1_11.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button1_11.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button1_11.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button1_11.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button1_12.addEventListener('click', change1_12);
+function change1_12 (event) {
+    keyboard_button1_12.style.background = "#e95b5b";
+    keyboard_button1_12.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button1_12.style.background = "#444444";
+        keyboard_button1_12.style.borderRadius = "3px";
+      }, 500)   
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button1_12.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button1_12.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button1_12.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button1_12.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button1_13.addEventListener('click', change1_13);
+function change1_13 (event) {
+    keyboard_button1_13.style.background = "#e95b5b";
+    keyboard_button1_13.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button1_13.style.background = "444444";
+        keyboard_button1_13.style.borderRadius = "3px";
+      }, 500)   
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button1_13.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button1_13.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button1_13.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button1_13.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button1_14.addEventListener('click', change1_14);
+function change1_14 (event) {
+    keyboard_button1_14.style.background = "#e95b5b";
+    keyboard_button1_14.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button1_14.style.background = "black";
+        keyboard_button1_14.style.borderRadius = "3px";
+      }, 500)
+      textarea.value = textarea.value.slice(0, textarea.value.length-1)      
+    }
+
+keyboard_button2_1.addEventListener('click', change2_1);
+function change2_1 (event) {   
+    keyboard_button2_1.style.background = "#e95b5b";
+    keyboard_button2_1.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button2_1.style.background = "black";
+        keyboard_button2_1.style.borderRadius = "3px";
+      }, 500)
+    textarea.value += "    "
+}
+
+keyboard_button2_2.addEventListener('click', change2_2);
+function change2_2 (event) {
+    keyboard_button2_2.style.background = "#e95b5b";
+    keyboard_button2_2.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button2_2.style.background = "#444444";
+        keyboard_button2_2.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button2_2.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button2_2.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button2_2.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button2_2.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button2_3.addEventListener('click', change2_3);
+function change2_3 (event) {
+    keyboard_button2_3.style.background = "#e95b5b";
+    keyboard_button2_3.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button2_3.style.background = "#444444";
+        keyboard_button2_3.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button2_3.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button2_3.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button2_3.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button2_3.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button2_4.addEventListener('click', change2_4);
+function change2_4 (event) {
+    keyboard_button2_4.style.background = "#e95b5b";
+    keyboard_button2_4.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button2_4.style.background = "#444444";
+        keyboard_button2_4.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button2_4.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button2_4.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button2_4.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button2_4.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button2_5.addEventListener('click', change2_5);
+function change2_5 (event) {
+    keyboard_button2_5.style.background = "#e95b5b";
+    keyboard_button2_5.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button2_5.style.background = "#444444";
+        keyboard_button2_5.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button2_5.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button2_5.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button2_5.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button2_5.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button2_6.addEventListener('click', change2_6);
+function change2_6 (event) {
+    keyboard_button2_6.style.background = "#e95b5b";
+    keyboard_button2_6.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button2_6.style.background = "#444444";
+        keyboard_button2_6.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button2_6.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button2_6.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button2_6.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button2_6.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button2_7.addEventListener('click', change2_7);
+function change2_7 (event) {
+    keyboard_button2_7.style.background = "#e95b5b";
+    keyboard_button2_7.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button2_7.style.background = "#444444";
+        keyboard_button2_7.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button2_7.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button2_7.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button2_7.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button2_7.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button2_8.addEventListener('click', change2_8);
+function change2_8 (event) {
+    keyboard_button2_8.style.background = "#e95b5b";
+    keyboard_button2_8.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button2_8.style.background = "#444444";
+        keyboard_button2_8.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button2_8.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button2_8.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button2_8.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button2_8.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button2_9.addEventListener('click', change2_9);
+function change2_9 (event) {
+    keyboard_button2_9.style.background = "#e95b5b";
+    keyboard_button2_9.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button2_9.style.background = "#444444";
+        keyboard_button2_9.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button2_9.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button2_9.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button2_9.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button2_9.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button2_10.addEventListener('click', change2_10);
+function change2_10 (event) {
+    keyboard_button2_10.style.background = "#e95b5b";
+    keyboard_button2_10.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button2_10.style.background = "#444444";
+        keyboard_button2_10.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button2_10.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button2_10.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button2_10.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button2_10.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button2_11.addEventListener('click', change2_11);
+function change2_11 (event) {
+    keyboard_button2_11.style.background = "#e95b5b";
+    keyboard_button2_11.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button2_11.style.background = "#444444";
+        keyboard_button2_11.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button2_11.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button2_11.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button2_11.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button2_11.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button2_12.addEventListener('click', change2_12);
+function change2_12 (event) {
+    keyboard_button2_12.style.background = "#e95b5b";
+    keyboard_button2_12.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button2_12.style.background = "#444444";
+        keyboard_button2_12.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button2_12.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button2_12.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button2_12.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button2_12.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button2_13.addEventListener('click', change2_13);
+function change2_13 (event) {
+    keyboard_button2_13.style.background = "#e95b5b";
+    keyboard_button2_13.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button2_13.style.background = "#444444";
+        keyboard_button2_13.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button2_13.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button2_13.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button2_13.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button2_13.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button2_14.addEventListener('click', change2_14);
+function change2_14 (event) {
+    keyboard_button2_14.style.background = "#e95b5b";
+    keyboard_button2_14.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button2_14.style.background = "#444444";
+        keyboard_button2_14.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button2_14.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button2_14.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button2_14.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button2_14.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button2_15.addEventListener('click', change2_15);
+function change2_15 (event) {
+    keyboard_button2_15.style.background = "#e95b5b";
+    keyboard_button2_15.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button2_15.style.background = "black";
+        keyboard_button2_15.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button2_15.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button2_15.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button2_15.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button2_15.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button3_2.addEventListener('click', change3_2);
+function change3_2 (event) {
+    keyboard_button3_2.style.background = "#e95b5b";
+    keyboard_button3_2.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button3_2.style.background = "#444444";
+        keyboard_button3_2.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button3_2.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button3_2.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button3_2.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button3_2.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button3_3.addEventListener('click', change3_3);
+function change3_3 (event) {
+    keyboard_button3_3.style.background = "#e95b5b";
+    keyboard_button3_3.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button3_3.style.background = "#444444";
+        keyboard_button3_3.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button3_3.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button3_3.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button3_3.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button3_3.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button3_4.addEventListener('click', change3_4);
+function change3_4 (event) {
+    keyboard_button3_4.style.background = "#e95b5b";
+    keyboard_button3_4.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button3_4.style.background = "#444444";
+        keyboard_button3_4.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button3_4.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button3_4.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button3_4.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button3_4.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button3_5.addEventListener('click', change3_5);
+function change3_5 (event) {
+    keyboard_button3_5.style.background = "#e95b5b";
+    keyboard_button3_5.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button3_5.style.background = "#444444";
+        keyboard_button3_5.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button3_5.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button3_5.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button3_5.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button3_5.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button3_6.addEventListener('click', change3_6);
+function change3_6 (event) {
+    keyboard_button3_6.style.background = "#e95b5b";
+    keyboard_button3_6.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button3_6.style.background = "#444444";
+        keyboard_button3_6.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button3_6.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button3_6.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button3_6.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button3_6.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button3_7.addEventListener('click', change3_7);
+function change3_7 (event) {
+    keyboard_button3_7.style.background = "#e95b5b";
+    keyboard_button3_7.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button3_7.style.background = "#444444";
+        keyboard_button3_7.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button3_7.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button3_7.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button3_7.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button3_7.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button3_8.addEventListener('click', change3_8);
+function change3_8 (event) {
+    keyboard_button3_8.style.background = "#e95b5b";
+    keyboard_button3_8.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button3_8.style.background = "#444444";
+        keyboard_button3_8.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button3_8.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button3_8.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button3_8.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button3_8.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button3_9.addEventListener('click', change3_9);
+function change3_9 (event) {
+    keyboard_button3_9.style.background = "#e95b5b";
+    keyboard_button3_9.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button3_9.style.background = "#444444";
+        keyboard_button3_9.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button3_9.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button3_9.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button3_9.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button3_9.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button3_10.addEventListener('click', change3_10);
+function change3_10 (event) {
+    keyboard_button3_10.style.background = "#e95b5b";
+    keyboard_button3_10.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button3_10.style.background = "#444444";
+        keyboard_button3_10.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button3_10.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button3_10.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button3_10.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button3_10.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button3_11.addEventListener('click', change3_11);
+function change3_11 (event) {
+    keyboard_button3_11.style.background = "#e95b5b";
+    keyboard_button3_11.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button3_11.style.background = "#444444";
+        keyboard_button3_11.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button3_11.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button3_11.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button3_11.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button3_11.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button3_12.addEventListener('click', change3_12);
+function change3_12 (event) {
+    keyboard_button3_12.style.background = "#e95b5b";
+    keyboard_button3_12.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button3_12.style.background = "#444444";
+        keyboard_button3_12.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button3_12.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button3_12.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button3_12.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button3_12.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button3_13.addEventListener('click', change3_13);
+function change3_13 (event) {
+    keyboard_button3_13.style.background = "#e95b5b";
+    keyboard_button3_13.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button3_13.style.background = "black";
+        keyboard_button3_13.style.borderRadius = "3px";
+      }, 500)   
+    textarea.value += "\n"
+}
+
+keyboard_button4_2.addEventListener('click', change4_2);
+function change4_2 (event) {
+    keyboard_button4_2.style.background = "#e95b5b";
+    keyboard_button4_2.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button4_2.style.background = "#444444";
+        keyboard_button4_2.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button4_2.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button4_2.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button4_2.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button4_2.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button4_3.addEventListener('click', change4_3);
+function change4_3 (event) {
+    keyboard_button4_3.style.background = "#e95b5b";
+    keyboard_button4_3.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button4_3.style.background = "#444444";
+        keyboard_button4_3.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button4_3.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button4_3.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button4_3.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button4_3.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button4_4.addEventListener('click', change4_4);
+function change4_4 (event) {
+    keyboard_button4_4.style.background = "#e95b5b";
+    keyboard_button4_4.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button4_4.style.background = "#444444";
+        keyboard_button4_4.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button4_4.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button4_4.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button4_4.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button4_4.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button4_5.addEventListener('click', change4_5);
+function change4_5 (event) {
+    keyboard_button4_5.style.background = "#e95b5b";
+    keyboard_button4_5.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button4_5.style.background = "#444444";
+        keyboard_button4_5.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        
+        if (!keyboard_button4_5.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button4_5.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button4_5.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button4_5.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button4_6.addEventListener('click', change4_6);
+function change4_6 (event) {
+    keyboard_button4_6.style.background = "#e95b5b";
+    keyboard_button4_6.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button4_6.style.background = "#444444";
+        keyboard_button4_6.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button4_6.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button4_6.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button4_6.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button4_6.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button4_7.addEventListener('click', change4_7);
+function change4_7 (event) {
+    keyboard_button4_7.style.background = "#e95b5b";
+    keyboard_button4_7.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button4_7.style.background = "#444444";
+        keyboard_button4_7.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button4_7.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button4_7.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button4_7.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button4_7.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button4_8.addEventListener('click', change4_8);
+function change4_8 (event) {
+    keyboard_button4_8.style.background = "#e95b5b";
+    keyboard_button4_8.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button4_8.style.background = "#444444";
+        keyboard_button4_8.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button4_8.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button4_8.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button4_8.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button4_8.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button4_9.addEventListener('click', change4_9);
+function change4_9 (event) {
+    keyboard_button4_9.style.background = "#e95b5b";
+    keyboard_button4_9.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button4_9.style.background = "#444444";
+        keyboard_button4_9.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button4_9.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button4_9.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button4_9.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button4_9.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button4_10.addEventListener('click', change4_10);
+function change4_10 (event) {
+    keyboard_button4_10.style.background = "#e95b5b";
+    keyboard_button4_10.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button4_10.style.background = "#444444";
+        keyboard_button4_10.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button4_10.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button4_10.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button4_10.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button4_10.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button4_11.addEventListener('click', change4_11);
+function change4_11 (event) {
+    keyboard_button4_11.style.background = "#e95b5b";
+    keyboard_button4_11.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button4_11.style.background = "#444444";
+        keyboard_button4_11.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button4_11.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button4_11.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button4_11.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button4_11.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button4_12.addEventListener('click', change4_12);
+function change4_12 (event) {
+    keyboard_button4_12.style.background = "#e95b5b";
+    keyboard_button4_12.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button4_12.style.background = "black";
+        keyboard_button4_12.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button4_12.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button4_12.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button4_12.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button4_12.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button4_13.addEventListener('click', change4_13);
+function change4_13 (event) {
+    keyboard_button4_13.style.background = "#e95b5b";
+    keyboard_button4_13.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button4_13.style.background = "black";
+        keyboard_button4_13.style.borderRadius = "3px";
+      }, 500)
+    }
+
+keyboard_button5_1.addEventListener('click', change5_1);
+function change5_1 (event) {
+    keyboard_button5_1.style.background = "#e95b5b";
+    keyboard_button5_1.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button5_1.style.background = "black";
+        keyboard_button5_1.style.borderRadius = "3px";
+      }, 500)
+}
+
+keyboard_button5_2.addEventListener('click', change5_2);
+function change5_2 (event) {
+    keyboard_button5_2.style.background = "#e95b5b";
+    keyboard_button5_2.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button5_2.style.background = "black";
+        keyboard_button5_2.style.borderRadius = "3px";
+      }, 500)
+}
+
+keyboard_button5_3.addEventListener('click', change5_3);
+function change5_3 (event) {
+    keyboard_button5_3.style.background = "#e95b5b";
+    keyboard_button5_3.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button5_3.style.background = "black";
+        keyboard_button5_3.style.borderRadius = "3px";
+      }, 500)
+}
+
+keyboard_button5_4.addEventListener('click', change5_4);
+function change5_4 (event) {
+    keyboard_button5_4.style.background = "#e95b5b";
+    keyboard_button5_4.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button5_4.style.background = "#444444";
+        keyboard_button5_4.style.borderRadius = "3px";
+      }, 500)
+    textarea.value += " "
+}
+
+keyboard_button5_5.addEventListener('click', change5_5);
+function change5_5 (event) {
+    keyboard_button5_5.style.background = "#e95b5b";
+    keyboard_button5_5.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button5_5.style.background = "black";
+        keyboard_button5_5.style.borderRadius = "3px";
+      }, 500)
+}
+
+keyboard_button5_6.addEventListener('click', change5_6);
+function change5_6 (event) {
+    keyboard_button5_6.style.background = "#e95b5b";
+    keyboard_button5_6.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button5_6.style.background = "black";
+        keyboard_button5_6.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button5_6.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button5_6.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button5_6.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button5_6.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button5_7.addEventListener('click', change5_7);
+function change5_7 (event) {
+    keyboard_button5_7.style.background = "#e95b5b";
+    keyboard_button5_7.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button5_7.style.background = "black";
+        keyboard_button5_7.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button5_7.firstChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button5_7.firstChild.childNodes[i].textContent
+        }
+    }
+    for (i=0; i<4; i++) {
+        if (!keyboard_button5_7.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button5_7.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button5_8.addEventListener('click', change5_8);
+function change5_8 (event) {
+    keyboard_button5_8.style.background = "#e95b5b";
+    keyboard_button5_8.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button5_8.style.background = "black";
+        keyboard_button5_8.style.borderRadius = "3px";
+      }, 500)
+    let content = ""
+    for (i=0; i<4; i++) {
+        if (!keyboard_button5_8.firstChild.childNodes[i].classList.contains('hidden')) {            
+            content += keyboard_button5_8.firstChild.childNodes[i].textContent
+        }
+    }
+    console.log(keyboard_button5_8.firstChild.childNodes[0].classList.contains('hidden'))
+    for (i=0; i<4; i++) {
+        if (!keyboard_button5_8.lastChild.childNodes[i].classList.contains('hidden')) {
+            content += keyboard_button5_8.lastChild.childNodes[i].textContent
+        }
+    }
+    textarea.value += content
+}
+
+keyboard_button5_9.addEventListener('click', change5_9);
+function change5_9 (event) {
+    keyboard_button5_9.style.background = "#e95b5b";
+    keyboard_button5_9.style.borderRadius = "50px";
+    setTimeout(() => {
+        keyboard_button5_9.style.background = "black";
+        keyboard_button5_9.style.borderRadius = "3px";
+      }, 500)
+}
+
+let flag = false
+document.body.addEventListener("keyup", changelange)
+function changelange (event) {
+    
+    let casedown = document.querySelectorAll(".casedown");
+    let caps = document.querySelectorAll(".caps");
+if (event.code == "AltLeft") {flag = true}
+if (event.code == "ShiftLeft" && flag) {
+    for (i=0; i<casedown.length; i++) {
+        if (casedown[i].parentElement.classList.contains('ru') && caps[0].classList.contains("hidden")){
+            if (!casedown[i].classList.contains('hidden')){
+                casedown[i].classList.add("hidden")              
+            }
+            else {
+                casedown[i].classList.remove("hidden")
+            }
+        }
+
+        //if (caps[i].parentElement.classList.contains('ru') && !caps[0].classList.contains("hidden")){
+           // if (!caps[1].classList.contains("hidden")) {
+           // console.log(5)
+           // caps[i].classList.add("hidden")}
+        
+       // else {
+        //        caps[i].classList.remove("hidden")
+      //  }
+    //}
+
+        if (casedown[i].parentElement.classList.contains('en') && caps[1].classList.contains("hidden")) {
+            if (casedown[i].classList.contains('hidden')){
+                casedown[i].classList.remove("hidden")
+            }
+            else {
+                casedown[i].classList.add("hidden")
+            }
+        }
+
+        //if (casedown[i].parentElement.classList.contains('en') && !caps[1].classList.contains("hidden")) {
+           // if (caps[i].classList.contains('hidden')){
+           //     caps[i].classList.remove("hidden")
+           // }
+           // else {
+           //     caps[i].classList.add("hidden")
+          //  }
+        //}
+    }   
+    flag = false
+    
+}
+}
+
+
+keyboard_button3_1.addEventListener('click', change3_1);
+function change3_1 (event) {
+    keyboard_button3_1.classList.toggle("back-clik")
+    let casedown = document.querySelectorAll(".casedown");
+    let caps = document.querySelectorAll(".caps");
+    for (i=0; i<casedown.length; i++) {
+        if (casedown[i].parentElement.classList.contains('ru') && caps[1].classList.contains('hidden')){
+            if (!casedown[i].classList.contains('hidden')){
+                casedown[i].classList.add("hidden")
+                caps[i].classList.remove("hidden")
+            }
+            else {
+                if (casedown[1].classList.contains('hidden')) {
+                casedown[i].classList.remove("hidden")
+                caps[i].classList.add("hidden")
+                }
+            }
+        }      
+    }
+    for (i=0; i<casedown.length; i++) {
+        if (casedown[i].parentElement.classList.contains('en') && caps[0].classList.contains('hidden')){
+            if (!casedown[i].classList.contains('hidden')) {
+                casedown[i].classList.add("hidden")
+                caps[i].classList.remove("hidden")
+            }
+            else {                   
+            
+            if (casedown[0].classList.contains('hidden')) {
+             casedown[i].classList.remove("hidden")
+              caps[i].classList.add("hidden")
+            }
+            }
+        }      
+    }
+}
+
+textarea.addEventListener("keydown", click)
+function click (event) {
+    if (event.code === "Backquote") {
+        keyboard_button1_1.style.background = "#e95b5b";
+        keyboard_button1_1.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button1_1.style.background = "black";
+            keyboard_button1_1.style.borderRadius = "3px";
+          }, 500)                
+    }
+    if (event.code === "Digit1") {
+        keyboard_button1_2.style.background = "#e95b5b";
+        keyboard_button1_2.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button1_2.style.background = "#444444";
+            keyboard_button1_2.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "Digit2") {
+        keyboard_button1_3.style.background = "#e95b5b";
+        keyboard_button1_3.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button1_3.style.background = "#444444";
+            keyboard_button1_3.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "Digit3") {
+        keyboard_button1_4.style.background = "#e95b5b";
+        keyboard_button1_4.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button1_4.style.background = "#444444";
+            keyboard_button1_4.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "Digit4") {
+        keyboard_button1_5.style.background = "#e95b5b";
+        keyboard_button1_5.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button1_5.style.background = "#444444";
+            keyboard_button1_5.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "Digit5") {
+        keyboard_button1_6.style.background = "#e95b5b";
+        keyboard_button1_6.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button1_6.style.background = "#444444";
+            keyboard_button1_6.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "Digit6") {
+        keyboard_button1_7.style.background = "#e95b5b";
+        keyboard_button1_7.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button1_7.style.background = "#444444";
+            keyboard_button1_7.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "Digit7") {
+        keyboard_button1_8.style.background = "#e95b5b";
+        keyboard_button1_8.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button1_8.style.background = "#444444";
+            keyboard_button1_8.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "Digit8") {
+        keyboard_button1_9.style.background = "#e95b5b";
+        keyboard_button1_9.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button1_9.style.background = "#444444";
+            keyboard_button1_9.style.borderRadius = "3px";
+          }, 500)                   
+    }if (event.code === "Digit9") {
+        keyboard_button1_10.style.background = "#e95b5b";
+        keyboard_button1_10.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button1_10.style.background = "#444444";
+            keyboard_button1_10.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "Digit0") {
+        keyboard_button1_11.style.background = "#e95b5b";
+        keyboard_button1_11.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button1_11.style.background = "#444444";
+            keyboard_button1_11.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "Minus") {
+        keyboard_button1_12.style.background = "#e95b5b";
+        keyboard_button1_12.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button1_12.style.background = "#444444";
+            keyboard_button1_12.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "Equal") {
+        keyboard_button1_13.style.background = "#e95b5b";
+        keyboard_button1_13.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button1_13.style.background = "#444444";
+            keyboard_button1_13.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "Backspace") {
+        keyboard_button1_14.style.background = "#e95b5b";
+        keyboard_button1_14.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button1_14.style.background = "black";
+            keyboard_button1_14.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "Tab") {
+        keyboard_button2_1.style.background = "#e95b5b";
+        keyboard_button2_1.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button2_1.style.background = "black";
+            keyboard_button2_1.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "KeyQ") {
+        keyboard_button2_2.style.background = "#e95b5b";
+        keyboard_button2_2.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button2_2.style.background = "#444444";
+            keyboard_button2_2.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "KeyW") {
+        keyboard_button2_3.style.background = "#e95b5b";
+        keyboard_button2_3.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button2_3.style.background = "#444444";
+            keyboard_button2_3.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "KeyE") {
+        keyboard_button2_4.style.background = "#e95b5b";
+        keyboard_button2_4.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button2_4.style.background = "#444444";
+            keyboard_button2_4.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "KeyR") {
+        keyboard_button2_5.style.background = "#e95b5b";
+        keyboard_button2_5.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button2_5.style.background = "#444444";
+            keyboard_button2_5.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "KeyT") {
+        keyboard_button2_6.style.background = "#e95b5b";
+        keyboard_button2_6.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button2_6.style.background = "#444444";
+            keyboard_button2_6.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "KeyY") {
+        keyboard_button2_7.style.background = "#e95b5b";
+        keyboard_button2_7.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button2_7.style.background = "#444444";
+            keyboard_button2_7.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "KeyU") {
+        keyboard_button2_8.style.background = "#e95b5b";
+        keyboard_button2_8.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button2_8.style.background = "#444444";
+            keyboard_button2_8.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "KeyI") {
+        keyboard_button2_9.style.background = "#e95b5b";
+        keyboard_button2_9.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button2_9.style.background = "#444444";
+            keyboard_button2_9.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "KeyO") {
+        keyboard_button2_10.style.background = "#e95b5b";
+        keyboard_button2_10.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button2_10.style.background = "#444444";
+            keyboard_button2_10.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "KeyP") {
+        keyboard_button2_11.style.background = "#e95b5b";
+        keyboard_button2_11.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button2_11.style.background = "#444444";
+            keyboard_button2_11.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "BracketLeft") {
+        keyboard_button2_12.style.background = "#e95b5b";
+        keyboard_button2_12.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button2_12.style.background = "#444444";
+            keyboard_button2_12.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "BracketRight") {
+        keyboard_button2_13.style.background = "#e95b5b";
+        keyboard_button2_13.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button2_13.style.background = "#444444";
+            keyboard_button2_13.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "Backslash") {
+        keyboard_button2_14.style.background = "#e95b5b";
+        keyboard_button2_14.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button2_14.style.background = "#444444";
+            keyboard_button2_14.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "NumpadMultiply") {
+        keyboard_button2_15.style.background = "#e95b5b";
+        keyboard_button2_15.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button2_15.style.background = "black";
+            keyboard_button2_15.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "CapsLock") {
+        change3_1()                         
+    }
+    if (event.code === "KeyA") {
+        keyboard_button3_2.style.background = "#e95b5b";
+        keyboard_button3_2.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button3_2.style.background = "#444444";
+            keyboard_button3_2.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "KeyS") {
+        keyboard_button3_3.style.background = "#e95b5b";
+        keyboard_button3_3.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button3_3.style.background = "#444444";
+            keyboard_button3_3.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "KeyD") {
+        keyboard_button3_4.style.background = "#e95b5b";
+        keyboard_button3_4.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button3_4.style.background = "#444444";
+            keyboard_button3_4.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "KeyF") {
+        keyboard_button3_5.style.background = "#e95b5b";
+        keyboard_button3_5.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button3_5.style.background = "#444444";
+            keyboard_button3_5.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "KeyG") {
+        keyboard_button3_6.style.background = "#e95b5b";
+        keyboard_button3_6.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button3_6.style.background = "#444444";
+            keyboard_button3_6.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "KeyH") {
+        keyboard_button3_7.style.background = "#e95b5b";
+        keyboard_button3_7.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button3_7.style.background = "#444444";
+            keyboard_button3_7.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "KeyJ") {
+        keyboard_button3_8.style.background = "#e95b5b";
+        keyboard_button3_8.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button3_8.style.background = "#444444";
+            keyboard_button3_8.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "KeyK") {
+        keyboard_button3_9.style.background = "#e95b5b";
+        keyboard_button3_9.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button3_9.style.background = "#444444";
+            keyboard_button3_9.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "KeyL") {
+        keyboard_button3_10.style.background = "#e95b5b";
+        keyboard_button3_10.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button3_10.style.background = "#444444";
+            keyboard_button3_10.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "Semicolon") {
+        keyboard_button3_11.style.background = "#e95b5b";
+        keyboard_button3_11.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button3_11.style.background = "#444444";
+            keyboard_button3_11.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "Quote") {
+        keyboard_button3_12.style.background = "#e95b5b";
+        keyboard_button3_12.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button3_12.style.background = "#444444";
+            keyboard_button3_12.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "Enter") {
+        keyboard_button3_13.style.background = "#e95b5b";
+        keyboard_button3_13.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button3_13.style.background = "black";
+            keyboard_button3_13.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "KeyZ") {
+        keyboard_button4_2.style.background = "#e95b5b";
+        keyboard_button4_2.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button4_2.style.background = "#444444";
+            keyboard_button4_2.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "KeyX") {
+        keyboard_button4_3.style.background = "#e95b5b";
+        keyboard_button4_3.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button4_3.style.background = "#444444";
+            keyboard_button4_3.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "KeyC") {
+        keyboard_button4_4.style.background = "#e95b5b";
+        keyboard_button4_4.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button4_4.style.background = "#444444";
+            keyboard_button4_4.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "KeyV") {
+        keyboard_button4_5.style.background = "#e95b5b";
+        keyboard_button4_5.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button4_5.style.background = "#444444";
+            keyboard_button4_5.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "KeyB") {
+        keyboard_button4_6.style.background = "#e95b5b";
+        keyboard_button4_6.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button4_6.style.background = "#444444";
+            keyboard_button4_6.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "KeyN") {
+        keyboard_button4_7.style.background = "#e95b5b";
+        keyboard_button4_7.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button4_7.style.background = "#444444";
+            keyboard_button4_7.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "KeyM") {
+        keyboard_button4_8.style.background = "#e95b5b";
+        keyboard_button4_8.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button4_8.style.background = "#444444";
+            keyboard_button4_8.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "Comma") {
+        keyboard_button4_9.style.background = "#e95b5b";
+        keyboard_button4_9.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button4_9.style.background = "#444444";
+            keyboard_button4_9.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "Period") {
+        keyboard_button4_10.style.background = "#e95b5b";
+        keyboard_button4_10.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button4_10.style.background = "#444444";
+            keyboard_button4_10.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "Slash") {
+        keyboard_button4_11.style.background = "#e95b5b";
+        keyboard_button4_11.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button4_11.style.background = "#444444";
+            keyboard_button4_11.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "ArrowUp") {
+        keyboard_button4_12.style.background = "#e95b5b";
+        keyboard_button4_12.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button4_12.style.background = "black";
+            keyboard_button4_12.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "ShiftRight") {
+        keyboard_button4_13.style.background = "#e95b5b";
+        keyboard_button4_13.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button4_13.style.background = "black";
+            keyboard_button4_13.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "ControlLeft") {
+        keyboard_button5_1.style.background = "#e95b5b";
+        keyboard_button5_1.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button5_1.style.background = "black";
+            keyboard_button5_1.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "MetaLeft") {
+        keyboard_button5_2.style.background = "#e95b5b";
+        keyboard_button5_2.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button5_2.style.background = "black";
+            keyboard_button5_2.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "AltLeft") {
+        keyboard_button5_3.style.background = "#e95b5b";
+        keyboard_button5_3.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button5_3.style.background = "black";
+            keyboard_button5_3.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "Space") {
+        keyboard_button5_4.style.background = "#e95b5b";
+        keyboard_button5_4.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button5_4.style.background = "#444444";
+            keyboard_button5_4.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "AltRight") {
+        keyboard_button5_5.style.background = "#e95b5b";
+        keyboard_button5_5.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button5_5.style.background = "black";
+            keyboard_button5_5.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "ArrowLeft") {
+        keyboard_button5_6.style.background = "#e95b5b";
+        keyboard_button5_6.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button5_6.style.background = "black";
+            keyboard_button5_6.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "ArrowDown") {
+        keyboard_button5_7.style.background = "#e95b5b";
+        keyboard_button5_7.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button5_7.style.background = "black";
+            keyboard_button5_7.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "ArrowRight") {
+        keyboard_button5_8.style.background = "#e95b5b";
+        keyboard_button5_8.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button5_8.style.background = "black";
+            keyboard_button5_8.style.borderRadius = "3px";
+          }, 500)                   
+    }
+    if (event.code === "ControlRight") {
+        keyboard_button5_9.style.background = "#e95b5b";
+        keyboard_button5_9.style.borderRadius = "50px";
+        setTimeout(() => {
+            keyboard_button5_9.style.background = "black";
+            keyboard_button5_9.style.borderRadius = "3px";
+          }, 500)                   
+    }    
+    console.log(event.code)
 }
 

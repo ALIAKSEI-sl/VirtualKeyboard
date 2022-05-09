@@ -108,3 +108,8 @@
 .hidden {
     display: none;
 }
+
+.back-clik {
+    background: #e95b5b;
+    border-radius: 50px;
+}

@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+.title {
+    font-size: 30px;
+    color: rgba(101,134,177);
+    text-align: center;
+    margin: 10px auto;
+}
+
+.textarea {
+    display: block;
+    width: 700px;
+    height: 200px;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 18px;
+    color: #9daf9cda;
+}
+
+.description, .language {
+    margin: 10px auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+.keyboard_doby {
+    width: 704px;
+    margin: 0 auto;
+    padding: 5px;
+    padding-left: 0;
+    padding-bottom: 0;
+    background: #888888;
+    border: 3px solid #222222;
+    border-radius: 5px;
+}
+
+.keyboard_row {    
+    width: 100%;
+    height: 40px;
+    margin-bottom: 8px;
+    display: flex;
+}
+.keyboard_button {
+    width: 40px;
+    height: 40px;
+    margin-left: 6px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+    background: #444444;
+    border-radius: 3px;
+    cursor: pointer;
+    user-select: none;
+    transition: border-radius 0.3s, background-color 0.3s;
+}
+
+.keyboard_button1_14 {
+    width: 100px;
+    background: black;
+}
+
+.keyboard_button2_1 {
+    width: 50px;
+    background: black;
+}
+
+.keyboard_button2_15 {
+    width: 44px;
+    background: black;
+}
+
+.keyboard_button3_1 {
+    width: 100px;
+    background: black;
+}
+
+.keyboard_button3_13 {
+    width: 86px;
+    background: black;
+}
+
+.keyboard_button4_1 {
+    width: 100px;
+    background: black;
+}
+
+.keyboard_button4_12 {    
+    background: black;
+}
+
+.keyboard_button4_13 {
+    width: 86px;
+    background: black;
+}
+
+.keyboard_button5_1, .keyboard_button5_2, .keyboard_button5_3, .keyboard_button5_5, .keyboard_button5_6, .keyboard_button5_7, .keyboard_button5_8, .keyboard_button5_9 {
+    background: black;
+}
+
+.keyboard_button5_4 {
+    width: 330px;
+}
+
+.hidden {
+    display: none;
+}
+
+.back-clik {
+    background: #e95b5b;
+    border-radius: 50px;
+}
